@@ -7,7 +7,7 @@ function App() {
   const [fontSize,setFontSize]=useState(16);
 
   return (
-    <div style={{ fontSize: `${fontSize}px` }}>
+    <div style={{ fontSize: `${fontSize}px` }} className='App'>
       <Header/>  
       <div className='buttons'>
           <p>fontSize:</p>
@@ -16,6 +16,8 @@ function App() {
           <button onClick={() => setFontSize(24)}>L</button>
       </div>  
       <hr/>
+
+      
     </div>
   );
 }
